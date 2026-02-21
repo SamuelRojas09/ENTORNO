@@ -66,18 +66,6 @@ resultado: list[list[str]] = palabras_mismos_caracteres(palabras)
 for grupo in resultado:
     print("Palabras con los mismos caracteres:", grupo)
 
-
-"""
-El programa recorre todas las palabras que el usuario ingresó y busca cuáles tienen los mismos caracteres.
-Primero pide las palabras con input() y usa split() para separarlas en palabras individuales.
-Luego toma cada palabra como base y compara sus letras con las de todas las demás palabras que todavía no hayan sido agrupadas.
-Para comparar, usa sorted() que ordena las letras de cada palabra y así verifica si tienen exactamente los mismos caracteres, letra por letra.
-Para no repetir palabras en varios grupos, usa una lista que marca cuáles palabras ya fueron incluidas en algún grupo.
-Si todas las letras coinciden con la palabra base, agrega esa palabra al grupo y la marca como usada.
-Al final, guarda solo los grupos que tienen más de una palabra, porque esos son los que realmente comparten los mismos caracteres.
-Finalmente, muestra cada grupo en pantalla, indicando cuáles palabras tienen exactamente los mismos caracteres entre sí.
-"""
-
 """
 El programa recorre todas las palabras que el usuario ingresó y busca cuáles tienen los mismos caracteres.
 Primero pido las palabras con input() y uso split() para separar la cadena en palabras individuales.
